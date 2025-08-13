@@ -25,7 +25,7 @@ const SignIn = () => {
         password
       });
 
-      console.log({ isError, error, session, user }); 
+      
 
       if (isError) {
         setError(error);

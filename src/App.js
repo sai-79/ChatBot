@@ -17,7 +17,7 @@ function PrivateRoute() {
   const { isAuthenticated, isLoading } = useAuthenticationStatus();
 
   if (isLoading) return <div>Loading...</div>;
-  console.log("hi");
+
   return isAuthenticated ? <Outlet /> : <Navigate to="/sign-in" replace />;
 }
 
